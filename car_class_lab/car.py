@@ -1,5 +1,5 @@
 class Car(object):
-    def __init__(self,type=None,model='GM',name='General'):
+    def __init__(self,name='General',model='GM',type=None):
         self.type = type
         self._model = model
         self._name  = name
@@ -41,4 +41,3 @@ class Car(object):
         else:
             self.speed = 1000
         return self
-        
