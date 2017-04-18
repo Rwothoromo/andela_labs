@@ -10,6 +10,7 @@ class Car(object):
     @property
     def name(self):
         return self._name
+
     @property
     def model(self):
         return self._model
@@ -20,17 +21,20 @@ class Car(object):
             return 2
         else:
             return 4
+
     @property
     def num_of_wheels(self):
         if self._name=='trailer':
             return 8
         else:
-            return 4 
+            return 4
+
     def is_saloon(self):
         if self._name !='trailer':
             return 'saloon'
         else:
             return 'trailer'
+
     def drive(self,speed):
         if self.name=='trailer':
             self.speed=77
