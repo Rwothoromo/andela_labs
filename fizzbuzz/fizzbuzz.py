@@ -4,7 +4,7 @@ def fizz_buzz(var):
   
   elif var%3 == 0:
     return 'Fizz'
-  
+
   elif var%5 == 0:
     return 'Buzz'
   
