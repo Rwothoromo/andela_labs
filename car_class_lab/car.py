@@ -3,8 +3,8 @@ class Car(object):
         self.type = type
         self._model = model
         self._name  = name
-        self._num_of_doors=4
-        self._num_of_wheels=4
+        self._doors=4
+        self._wheels=4
         self.speed = 0
 
     @property
