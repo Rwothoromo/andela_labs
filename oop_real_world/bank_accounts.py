@@ -13,11 +13,11 @@ class BankAccount(object):
 
 
 class SavingsAccount(BankAccount):
-    def __init__(self):
+    def __init__(self, name):
         self.balance = 25000
         self.account_type = "Savings Account"
 
 
 class CurrentAccount(BankAccount):
-    def __init__(self):
+    def __init__(self, name):
         self.account_type = "Current Account"
