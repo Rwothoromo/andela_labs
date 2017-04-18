@@ -7,3 +7,6 @@ def fizz_buzz(var):
   
   elif var%5 == 0:
     return 'Buzz'
+  
+  else:
+    return var
