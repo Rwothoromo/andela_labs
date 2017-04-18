@@ -37,5 +37,3 @@ class Car(object):
         else:
             self.speed=1000
         return self
-
-Mark as read (esc)
