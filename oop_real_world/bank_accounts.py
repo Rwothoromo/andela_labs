@@ -1,26 +1,20 @@
 class BankAccount(object):
     """ Manage different types of Bank Accounts """
 
-    def __init__(self, name,  balance=0.0):
+    def __init__(self, name, account_type, balance=0.0):
         self.name = name
+        self.account_type = account_type
         self.balance = balance
 
     def deposit(self, amount):
         self.balance += amount
         return self.balance
 
-    # def withdraw(self, amount):
-    #     if amount > self.balance:
-    #         raise RuntimeError('Amount greater than available balance.')
-    #         self.balance -= amount
-    #     return self.balance
-
 
 class SavingsAccount(BankAccount):
-    def __init__(self):
-        self.balance = 20000
+    balance = 25000
+    account_type = "Savings Account"
 
 
 class CurrentAccount(BankAccount):
-    def __init__(self):
-        pass
+    account_type = "Current Account"
