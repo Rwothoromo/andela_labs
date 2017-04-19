@@ -13,10 +13,10 @@ page_post = requests.post(url, {"username": username, "password": password})
 
 results_dict = {}
 results_dict['Content_type'] = page_get.headers['content-type']
-# results_dict['Content'] = page_get.text
-results_dict['Encoding'] = page_get.encoding
-# results_dict['Json'] = page_post.json()
 results_dict['Status'] = page_post.status_code
+results_dict['Encoding'] = page_get.encoding
+# results_dict['Content'] = page_get.text
+# results_dict['Json'] = page_post.json()
 
 print("\nConnection details:\n\n")
 
