@@ -24,7 +24,6 @@ results_dict = profile.json()
 for key in results_dict:
     print(key, " : ", results_dict[key])
 
-# ba982517f6117112c505c1233781bfc0a2adc6b5
 
 # page_get = requests.get(url, auth=(username, password))
 # page_post = requests.post(url, {"username": username, "password": password})
