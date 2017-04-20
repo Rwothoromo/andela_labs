@@ -9,11 +9,10 @@ class BinarySearch(list):
 
         self.length = len(self) # returns the number of elements in the array
 
-    #implement the binary search algorithm
     def search(self, c): # c is the value you are to find
         dict_result = {}
-        count = 0
-        index = -1
+        count = 0  # count is 0 until we split the list
+        index = -1 # if c is not found, we set the index to -1
 
         first_index = 0
         last_index = self.length - 1
@@ -24,7 +23,7 @@ class BinarySearch(list):
             item_found = True
             index = -1
 
-        # please note that whenever item_found is true, we don't increment the counter
+        # please note that whenever item_found is true, we don't increment the count
         if c == self[first_index]:
             item_found = True
             index = first_index
@@ -33,7 +32,7 @@ class BinarySearch(list):
             item_found = True
             index = last_index
 
-        # now we search for the occurrence of c in the list
+        # implement the binary search algorithm, where search first compares c to the middle_item
         while first_index <= last_index and not item_found:
             middle_index = (first_index+last_index)//2
             middle_item = self[middle_index]
