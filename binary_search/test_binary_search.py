@@ -1,5 +1,5 @@
 from unittest import TestCase
-from binary_search import BinarySearch
+from binary_search import *
 
 class ListComprehensionTest(TestCase):
 
@@ -8,7 +8,7 @@ class ListComprehensionTest(TestCase):
     """
 
     def setUp(self):
-        self.one_to_twenty = BinarySearch(20, 1) # returns a list [1, 2, ..., 17, 18, 19, 20]
+        self.one_to_twenty = BinarySearch(20, 1)
         self.two_to_forty = BinarySearch(20, 2)
         self.ten_to_thousand = BinarySearch(100, 10)
 
@@ -164,3 +164,4 @@ class BinarySearchTest(TestCase):
             msg='should return {count: 3, index: -1} for 10000'
         )
 
+        
